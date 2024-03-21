@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sportifan_user/authentication/widgets/auth_name_widget.dart';
 import 'package:sportifan_user/authentication/widgets/auth_widget.dart';
 import 'package:sportifan_user/constants/routes.dart';
@@ -33,6 +34,7 @@ class _AuthScreenState extends State<AuthScreen> {
       BuildContext context, String phoneNumber) async {
     try {
       final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+      
       await _firebaseAuth.verifyPhoneNumber(
           phoneNumber: phoneNumber,
           verificationCompleted:
@@ -67,6 +69,8 @@ class _AuthScreenState extends State<AuthScreen> {
           (await _firebaseAuth.signInWithCredential(phoneAuthCredential)).user;
       if (user != null) {
         uid = user.uid;
+         final SharedPreferences prefs = await SharedPreferences.getInstance();
+         prefs.setString("uid",uid!);
         onSuccess();
       }
       otpAdded = true;
