@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "815493652864",
+    "project_id": "sportifan-user-app",
+    "storage_bucket": "sportifan-user-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815493652864:android:ab859aa5a0f37de2a5e165",
+        "android_client_info": {
+          "package_name": "com.example.sportifan_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815493652864-qedvav4r55hajanmth58ftq4k2r5gnhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportifan_user",
+            "certificate_hash": "2286a7ea0515e90366be51306914420e9f4d69a5"
+          }
+        },
+        {
+          "client_id": "815493652864-7vppl8o7266cube9o8js3qnmrs8abslu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOZZYSnpo7FeqULGgKWTa7ExwILkqXL3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815493652864-7vppl8o7266cube9o8js3qnmrs8abslu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
